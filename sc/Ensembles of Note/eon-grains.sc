@@ -52,7 +52,7 @@ SynthDef(\playgrain, {|freq = 5, out = 0, bufnum = 0, gate = 1, pos = 0, rate = 
 )
 
 (
-m = MIDIGrain("/home/andy/Dropbox/CUEE/Ensembles of Note/timbres1.wav");
+m = MIDIGrain("/media/andy/Data/Dev/CUEE/sc/Ensembles of Note/timbres1.wav");
 m.argGenerator = {|src, chan, note, vel|
 	[
 		\freq, 2.5 * [1,0.5,0.25,0.125,2,4,8,16,32,1/3,2/3].choose,
